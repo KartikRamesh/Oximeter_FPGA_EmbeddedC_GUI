@@ -1,8 +1,3 @@
- /* Pulse_Oxi.Java: Poxi GUI File
-   Author: Kartik Ramesh
-   Date: 15.04.2022
- */
-
 package poxi_S22;
 
 import java.awt.EventQueue;
@@ -699,7 +694,7 @@ public class PoxiMain
 					FRED_StartsWith=0;
 					cutString = rcvString;
 					//System.out.println(rcvString);
-					if (((rcvString.contains("~"))|(rcvString.contains("/"))|(rcvString.contains("ง")))&(!rcvString.contains("*")))
+					if (((rcvString.contains("~"))|(rcvString.contains("/"))|(rcvString.contains("ยง")))&(!rcvString.contains("*")))
 					{
 						if (rcvString.contains("~"))
 						{
@@ -739,13 +734,13 @@ public class PoxiMain
 								String Pulse_Elements[]={""};
 								Pulse_StartsWith=0;
 								cutString = FIRED_Elements[j];
-								if (FIRED_Elements[j].contains("ง")){
-									 if (FIRED_Elements[j].startsWith("ง"))
+								if (FIRED_Elements[j].contains("ยง")){
+									 if (FIRED_Elements[j].startsWith("ยง"))
 									{
 										Pulse_StartsWith=1;
 									}
-									Pulse_Elements = cutString.split("ง");
-									System.arraycopy(Pulse_Elements, Pulse_StartsWith, Pulse_Elements, 0, (cutString.split("ง")).length-Pulse_StartsWith);
+									Pulse_Elements = cutString.split("ยง");
+									System.arraycopy(Pulse_Elements, Pulse_StartsWith, Pulse_Elements, 0, (cutString.split("ยง")).length-Pulse_StartsWith);
 									Length_Pulse = Pulse_Elements.length-Pulse_StartsWith;
 								}
 								else
